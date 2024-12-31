@@ -1,0 +1,19 @@
+{
+    "name": "gawasvedraj/tgbot",
+    "description": "Simple Telegram Bot",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Gawasvedraj\\Tgbot\\": "."
+        }
+    },
+    "authors": [
+        {
+            "name": "Vedraj Gawas"
+        }
+    ],
+    "require": {
+        "nutgram/nutgram": "^4.31"
+    }
+}
