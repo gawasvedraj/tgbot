@@ -38,10 +38,10 @@ $bot->onText('你好', function(Nutgram $bot) {
 $bot->onText('//{thing}', function(Nutgram $bot, string $thing) {
     if (!(mb_substr($thing, 0, 1) == " ")) {
         if ($bot->message()->reply_to_message != null) {
-		$bot->sendMessage(text: embedMe($bot) . " " . $thing . " 了 " . embedYou($bot) . " \!", parse_mode: MD());
-	} else {
-		$bot->sendMessage(text: embedMe($bot) . " " . $thing . " 了自己 \!", parse_mode: MD());
-	}
+            $bot->sendMessage(text: embedMe($bot) . " " . $thing . " 了 " . embedYou($bot) . " \!", parse_mode: MD());
+        } else {
+            $bot->sendMessage(text: embedMe($bot) . " " . $thing . " 了自己 \!", parse_mode: MD());
+        }
     } else {
         ;
     }
@@ -51,9 +51,9 @@ $bot->onText('\\\{thing}', function(Nutgram $bot, string $thing) {
     if (!(mb_substr($thing, 0, 1) == " ")) {
         if ($bot->message()->reply_to_message != null) {
             $bot->sendMessage(text: embedMe($bot) . " 被 " . embedYou($bot) . " " . $thing . " 了 \!", parse_mode: MD());
-	} else {
-		$bot->sendMessage(text: embedMe($bot) . " 被自己 " . $thing . " 了 \!", parse_mode: MD());
-	}
+        } else {
+            $bot->sendMessage(text: embedMe($bot) . " 被自己 " . $thing . " 了 \!", parse_mode: MD());
+        }
     } else {
         ;
     }
