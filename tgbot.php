@@ -31,8 +31,8 @@ function MD() {
     return "MarkdownV2";
 }
 
-$bot->onText(strtolower('Hi'), function(Nutgram $bot) {
-    $bot->sendMessage(text: "Hi " . embedMe($bot), parse_mode: MD());
+$bot->onText('你好', function(Nutgram $bot) {
+    $bot->sendMessage(text: "你好 " . embedMe($bot), parse_mode: MD());
 });
 
 $bot->onText('//{thing}', function(Nutgram $bot, string $thing) {
