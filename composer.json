@@ -2,7 +2,7 @@
     "name": "gawasvedraj/tgbot",
     "description": "Simple Telegram Bot",
     "type": "project",
-    "license": "GPL-3.0-or-later",
+    "license": "MPL-2.0",
     "autoload": {
         "psr-4": {
             "Gawasvedraj\\Tgbot\\": "."
